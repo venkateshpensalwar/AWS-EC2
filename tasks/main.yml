@@ -13,7 +13,6 @@
                     instance_tags:
                                Name: "{{ instance_tag_Master }}"
 
-
           - name: Launch Kubernetes Slave
             amazon.aws.ec2:
                        region: "{{ region }}"
@@ -27,4 +26,3 @@
                        assign_public_ip: yes
                        instance_tags:
                                    Name: "{{ instance_tag_Slave }}"
-
